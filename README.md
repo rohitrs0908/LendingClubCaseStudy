@@ -1,5 +1,5 @@
-# Project Name
-> Outline a brief description of your project.
+# Project Name : Lending club case study
+Lending Club provides loan based of  “creditworthiness," Once Lending Club determines that an applicant is “creditworthy,” it issues the applicant an “A” through “G” grade and a 1 through 5 subgrade based off of an applicant's credit history. This company is the largest online loan marketplace, facilitating personal loans, business loans, and financing of medical procedures. Borrowers can easily access lower interest rate loans through a fast online interface. This project using data analysis tries to find the potential attributes for loan default.
 
 
 ## Table of Contents
@@ -8,45 +8,51 @@
 * [Conclusions](#conclusions)
 * [Acknowledgements](#acknowledgements)
 
-<!-- You can include any other section that is pertinent to your problem -->
 
 ## General Information
-- Provide general information about your project here.
-- What is the background of your project?
-- What is the business probem that your project is trying to solve?
-- What is the dataset that is being used?
+Lending Club enables borrowers to create loan listings on its website by supplying details about themselves and the loans that they would like to request.  On the basis of the borrower’s credit score, credit history, desired loan amount and the borrower’s debt-to-income ratio, Lending Club determined whether the borrower was creditworthy and assigned to its approved loans a credit grade that determined the payable interest rate and fees. The standard loan period was three years; a five-year period was available at a higher interest rate and additional fees. Personal loan up to $ 40,000 and Business Loans ranging from $ 5,000 to $ 500,000 are provided
+Background
+The project is being submitted as partial fulfilment of Advanced Certificate in Machine Learning and Deeping Learning course conducted jointly by IIIT, Bangalore and Upgrad.
+Business Problem 
+Lending loans to ‘risky’ applicants, who are likely to default ,  is the largest source of financial loss (called credit loss). The credit loss is the amount of money lost by the lender when the borrower refuses to pay or runs away with the money owed. In other words, borrowers who default cause the largest amount of loss to the lenders. In this case, the customers labelled as 'charged-off' are the 'defaulters'.
+How consumer attributes and loan attributes influence the tendency of default.
+Identify risky loan applicants who are likely to default.  Identification of such applicants using EDA is the aim of this case study.
+Dataset Used
+Loan.csv
+The data given contains the information about past loan applicants and whether they ‘defaulted’ or not.  It contains the complete loan data for all loans issued through the time period 2007 t0 2011.
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+
 
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
-
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
-
+Loan having Interest rate greater than 15% has high chances of charged off.
+Loan Grade "F" and "G" have very high chances of charged off.                               
+Low Income range between 0 and 20000 has high chances of charged off.
+Small Business applicants have high chances of getting charged off.
+Charged off percent is high where 1 or 2 derogatory public records exist.
+Charged off percent is high where 1 or 2 public record bankruptcies exist.
 
 ## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
+Python 	3.8.8
+Pandas 	1.2.4
+Numpy 	1.20.1
+Matplotlib 	3.3.4
+Seaborn 	0.11.1
 
-<!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
 
 ## Acknowledgements
-Give credit here.
-- This project was inspired by...
+This project was inspired by IIT, Bangalore and Upgrad, Bangalore..
 - References if any...
-- This project was based on [this tutorial](https://www.example.com).
+https://en.wikipedia.org/wiki/LendingClub
+https://www.lendingclub.com/
+Python Documentation
+Upgrad Study Material
+https://corporatefinanceinstitute.com/resources/knowledge/finance/fico-score/
+https://corporatefinanceinstitute.com/resources/knowledge/credit/purpose-of-credit-risk-analysis/
+https://corporatefinanceinstitute.com/resources/knowledge/finance/debt-to-income-ratio/
+https://stackoverflow.com/
+https://pbpython.com/pandas-qcut-cut.html
+
 
 
 ## Contact
-Created by [@githubusername] - feel free to contact me!
-
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
+Created by [@githubusername] 
